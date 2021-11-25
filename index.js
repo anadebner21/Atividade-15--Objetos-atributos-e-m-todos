@@ -4,7 +4,7 @@ function imc(){
     pessoa.altura = prompt ("Informe sua altura:");
     console.log(pessoa.altura);
     pessoa.peso = prompt ("Informe seu peso:");
-    pessoa.getImc();
+    console.log(pessoa.peso);
     console.log(pessoa.getImc());
 
     if(pessoa.getImc() <17){
@@ -63,12 +63,12 @@ function numero(){
 
 
 let pessoa = {
-    nome : '', nascimento: '', altura: 0 , peso: 0, 
+    nome : '', nascimento: '', altura:  '', peso: '', 
     getIdade: function(){
         return 2021 - this.nascimento;
     },
     getImc: function(){
-        return this.peso * (this.altura/this.altura)
+        return  this.peso / (this.altura*this.altura);
     }
 }
 
